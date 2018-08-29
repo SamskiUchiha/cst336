@@ -26,9 +26,6 @@
                
                 
             </nav>
-
-              welcome to this <strong> world </strong>
   
-
         </body>
 </html>
