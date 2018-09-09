@@ -2,17 +2,14 @@
 <html>
 <!--
 
-First Website
-and comment
-in html
-(comments can span multiple lines)
+This About page
 
 -->
 
 <!-- This is the head -->
 <!-- All styles and javascript go inside the head -->
     <head>
-         <title>Lab 1: Sam Laitha's Personal Website</title>
+         <title>Lab 1: Sam Laitha's about page</title>
          
          <style> 
          
@@ -21,7 +18,7 @@ in html
                  height: 5px;
                  background: #155;
              }
-           
+             
              body {
                 background-color: #000000 !important;
              }
@@ -44,13 +41,12 @@ in html
         
           <header>
             <h1><center> Sam Laitha</center></h1> <!-- block tag -->
-                <h2> <center>My Portfolio </center></h2>
             </header>
             
             <nav id ="nav_bar">
                 <hr width = "50%"> 
-                <a href = "index.html" class = "active-page"> Home </a> <!-- inline tag -->
-                <a href = "about.html" > About </a>
+                <a href = "index.html" > Home </a> <!-- inline tag -->
+                <a href = "about.html" class = "active-page"> About </a>
                 <a href = "contact.html" > Contact Me </a>
                
             </nav>
@@ -59,18 +55,36 @@ in html
             
             <main>
                 
-                <figure id = "me">
-                    <img src = "/cst336/labs/lab1/img/spiderman.jpg" alt = "Picture of Spiderman" title = "This is Spiderman" width = "300px"/>
+                <figure>
+            
                 </figure>
-                <div id = "welcomeText"> 
-                    Hello! <br/>
-                    <p> Thanks for visiting my website!</p>
-                    <p> I am a student at CSUMB.</p>
-                    <p> Contact me at anytime during the day.</p>
-                    <p> My concentration is Software Engineer.</p>
-                    <br/><br/>
-                    <em> "You only live once" - Santiago B.</em>
+                <div id ="content"> 
+                    <table>
+                        <tr id = "table-header">
+                            <td><strong>Programming Language</strong></td>
+                            <td><strong>Semester Experience</strong></td>
+                        </tr>
+                        <tr class = "table-row">
+                            <td>C++</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class = "table-row">
+                            <td>Java</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class = "table-row">
+                            <td>PHP</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                   
+                   
                 </div>
+                <ul>
+                    <li><span class ="hobby" > Video Games:</span> I'm all about PC games and PC master race.</li>
+                    <li><span class ="hobby" > Art:</span> One of my hobby is drawing. Whenever I have free time I like to draw and create art.</li>
+                    <li><span class ="hobby" > Music:</span> I listen to all kind of music except Cardbi.</li>
+                </ul>
         
    
                 
