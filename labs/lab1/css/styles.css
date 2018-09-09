@@ -34,11 +34,11 @@ nav a:hover {
 footer {
     clear: left;
     font-variant: small-caps;
-    font-size: .9em;
+    font-size: .7em;
 }
 
 table {
-    margin: 0px auto;
+    margin: 10px auto;
 }
 
 td {
