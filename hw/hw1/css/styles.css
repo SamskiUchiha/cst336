@@ -1,0 +1,87 @@
+body {
+    size: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header, main, nav, footer, hr {
+    text-align: center;
+    
+}
+/*header {*/
+    /*font-family: Impact, Charcoal, sans-serif;*/
+/*}*/
+
+nav a{
+    padding: 10px;
+    padding-bottom: 2px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    
+}
+#nav_bar .active-page
+{
+    background-color: gray;
+    font-variant: small-caps;
+}
+
+nav a:hover {
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+    transition: .9s;
+}
+
+footer {
+    clear: left;
+    font-variant: small-caps; /* new tag */
+    
+    font-size: .7em;
+    color: yellow;
+}
+
+
+.row {
+    display: flex;
+    width: 80%;
+    margin-left: auto ;
+    margin-right: auto ;
+    
+    
+}
+
+.column {
+    flex: 33.33%; /*new tag */
+    padding: 10px;
+}
+
+.benefit {
+    width:500px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    
+    /*float: right;*/
+    /*clear: both;*/
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: gray;
+    font-size: 1.5em;
+    /*font-variant: small-caps;*/
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.column_ben {
+    text-align: left;
+    font-size: 1.2em;
+    /*text-shadow: inherit;*/
+}
