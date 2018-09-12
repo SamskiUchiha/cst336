@@ -9,9 +9,9 @@ header, main, nav, footer, hr {
     text-align: center;
     
 }
-/*header {*/
-    /*font-family: Impact, Charcoal, sans-serif;*/
-/*}*/
+header {
+    font-family: monospace;
+}
 
 nav a{
     padding: 10px;
