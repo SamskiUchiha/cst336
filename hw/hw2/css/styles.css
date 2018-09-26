@@ -11,15 +11,6 @@ body {
     color: white;
 }
 
-#darkTable {
-    border: 20;
-    border-color: black;
-}
-
-#output {
-    border: 20;
-    border-color: black;
-}
 
 footer{
     font-family: "Times New Roman", Georgia, Serif;
@@ -32,16 +23,6 @@ footer{
 
 form {
     text-align: center;
-    border: 10px;
-    border-color: black;
     color: red;
 }
 
-div {
-    position: absolute;
-    right: 10px;
-    top: 14px;
-    z-index: -1;
-    border: 10px;
-    border-color: black;
-}
