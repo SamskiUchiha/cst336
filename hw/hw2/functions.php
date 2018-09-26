@@ -1,6 +1,6 @@
 <?php
     $skins = range(1,14);
-    $weapon = array(1,2,3);
+    //$weapon = array(1,2,3);
     //$backbling = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
     
     $backbling = range(1,14); //Function Array(1)
@@ -45,7 +45,7 @@
         
         echo "<div class='skins'>";
         for($i = 0; $i < 3; $i++) {
-            ${"random_value" . $i} = rand(0,13);
+            ${"random_value" . $i} = rand(0,13); // test for 3 in a round
             selectionSkins(${"random_value" . $i} );
         }
         
@@ -114,19 +114,19 @@
         
         DisplayMessage($v11,$v22,$v33);
            
-        // echo "<div class='weapons'>";
-        // echo "<img width='150' src='img/backimg/$v11.PNG' border='10' style='border-color: black'>";
-        // echo "<img width='150' src='img/backimg/$v22.PNG' border='10' style='border-color: black'>";  
-        // echo "<img width='150' src='img/backimg/$v33.PNG' border='10' style='border-color: black'>";  
-        // echo "<br>";
-        
-        echo "<div class='backbling'>";
-        for($i = 0; $i < 3; $i++) {
-            ${"random_value" . $i} = rand(0,13);
-            selectionBling(${"random_value" . $i} );
-        }
-        
+        echo "<div class='weapons'>";
+        echo "<img width='150' src='img/backimg/$v11.PNG' border='10' style='border-color: black'>";
+        echo "<img width='150' src='img/backimg/$v22.PNG' border='10' style='border-color: black'>";  
+        echo "<img width='150' src='img/backimg/$v33.PNG' border='10' style='border-color: black'>";  
         echo "<br>";
+        
+        // echo "<div class='backbling'>";
+        // for($i = 0; $i < 3; $i++) {
+        //     ${"random_value" . $i} = rand(1,14);
+        //     selectionBling(${"random_value" . $i} );
+        // }
+        
+        // echo "<br>";
 
     }
     
