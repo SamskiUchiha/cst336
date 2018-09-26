@@ -3,7 +3,7 @@ header, main, nav, footer, hr {
     
 }
 body {
-    /*size: auto;*/
+    size: auto;
     background-size: 90%;
     background-repeat: no-repeat;
     background-color: black;
@@ -24,5 +24,14 @@ footer{
 form {
     text-align: center;
     color: red;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
 }
 

@@ -31,17 +31,10 @@
             background: url(img/<?php echo $selectedBback; ?>) no-repeat;
         }
         
-        
         table {
             text-align:center;
         }
         
-        #main {
-            background-color: gray;
-            margin-left: 580px;
-            margin-right: 580px;
-      
-        }
 
         
     </style>
@@ -53,38 +46,6 @@
             Try to get 3 of the same picture!
         </div>
       
-        
-        <!--<center><table class="darkTable"></center>-->
-        <!--    <thead>-->
-        <!--    <tr>-->
-        <!--    <th></th>-->
-        <!--    </tr>-->
-        <!--    </thead>-->
-        <!--    <tfoot>-->
-        <!--    <tr>-->
-        <!--    <td></td>-->
-        <!--    </tr>-->
-        <!--    </tfoot>-->
-        <!--    <tbody>-->
-        <!--    <tr>-->
-        <!--    <td></td>-->
-        <!--    </tr>-->
-        <!--    <tr>-->
-        <!--    <td></td>-->
-        <!--    </tr>-->
-        <!--    <tr>-->
-        <!--    <td>-->
-        <!--        <form>-->
-        <!--            <input type = "submit" value="RANDOM"/>-->
-        <!--        </form>-->
-                
-
-                
-        <!--    </td>-->
-        <!--    </tr>-->
-        <!--    </tbody>-->
-        <!--    </table>-->
-            
         <center><table class="darkTable"></center>
             <thead>
             <tr>
