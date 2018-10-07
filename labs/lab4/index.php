@@ -56,29 +56,10 @@ function formIsValid() {
             }
             
             #carouselExampleIndicators{
-                 width:500px;
                  margin:0 auto; 
             }
             
-            input {
-                opacity: 0.75;
-                display: inline-block;
-                color: black;
-                text-align: left;
-                background-color: white;
-                padding: 10px;
-                border-radius: 25px;
-            }
-            
-            radio {
-                opacity: 0.75;
-                display: inline-block;
-                color: black;
-                text-align: left;
-                background-color: white;
-                padding: 10px;
-                border-radius: 25px;
-            }
+
             
         </style>
         
@@ -114,7 +95,7 @@ function formIsValid() {
                 <option  <?= ($_GET['category'] == "Sky")?" selected":"" ?> >Sky</option>
             </select>
             
-            <input type="submit" name="submitBtn" value="Submit!!" />
+            <input type="submit" name="submitBtn" value="Submit" />
             
         </form>
 
