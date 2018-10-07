@@ -56,10 +56,22 @@ function formIsValid() {
             }
             
             #carouselExampleIndicators{
+                 width:500px;
                  margin:0 auto; 
             }
             
-
+            form {
+                opacity: 0.8;
+                display: inline-block;
+                color: white;
+                text-align: left;
+                background-color: #33212e;
+                padding: 10px;
+                border-radius: 25px;
+                -webkit-box-shadow:0px 0px 5px 5px #FFF3EF ;
+                -moz-box-shadow:0px 0px 5px 5px #FFF3EF ;
+                box-shadow:0px 0px 5px 5px #FFF3EF ;
+            }
             
         </style>
         
