@@ -11,7 +11,6 @@
 
     $i = rand(0, count($b)-1); // generate random number size of the array
     
-    shuffle($b); // Function Array(3)
     $selectedBback = "$b[$i]"; // set variable equal to which random filename was chosen
 ?>
     
