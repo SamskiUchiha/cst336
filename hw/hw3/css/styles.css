@@ -1,0 +1,71 @@
+    body {
+        background-color: lightgrey;
+        text-align: center;
+        
+    }
+    
+    input, select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input[type=submit] {
+        width: 10%;
+        background-color: orange;
+        color: black;
+        padding: 10px 15px;
+        margin: 3px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: green;
+    }
+    
+    table {
+        border: 10px black;
+    }
+
+    
+    h1 {
+        color: black;
+        text-align-last: center;
+    }
+    
+    table.cinereousTable {
+      border: 6px solid #948473;
+      background-color: #FFE3C6;
+      width: 45%;
+    }
+    table.cinereousTable td, table.cinereousTable th {
+      border: 1px solid #948473;
+      padding: 4px 4px;
+      border-radius: 50px;
+      text-align: left;
+    }
+    
+    table.cinereousTable thead {
+        text-align: left;
+    }
+
+    table.cinereousTable thead th {
+      font-size: 16px;
+      color: black;
+    }
+    
+    table.cinereousTable tfoot {
+      font-size: 16px;
+      color: black;
+    }
+    table.cinereousTable tfoot td {
+      font-size: 16px;
+    }
+    
+    h3 {
+        color: green;
+    }
