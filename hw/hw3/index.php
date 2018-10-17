@@ -2,13 +2,13 @@
 // https://www.crystalwebdesigns.com.au/checking-variables-in-php.html
     function formIsValid() {
         
-        if (empty($_GET['one']) && empty($_GET['two']) && empty($_GET['quantity']) && empty($_GET['quantity'])) {
-            echo "<h2>You must Answer all the Questions!</h2>";
+        if (empty($_GET['one']) && empty($_GET['two']) && empty($_GET['quantity']) && empty($_GET['check'])) {
+            echo "<center><h2>You must Answer all the Questions!</h2></center>";
             return false;
         }
         
-        if (empty($_GET['one']) || empty($_GET['two']) || empty($_GET['quantity']) || empty($_GET['quantity'])) {
-            echo "<h2>You must enter a complete input!</h2>";
+        if (empty($_GET['one']) || empty($_GET['two']) || empty($_GET['quantity']) || empty($_GET['check'])) {
+            echo "<center><h2>You must enter a complete input!</h2></center>";
             return false;
         }
         
@@ -18,7 +18,10 @@
     
     function congrats() {
         if(countScore() == 5) {
-            echo "WOW! CONGRATS!!";
+            echo "<br>";
+            echo "<table>";
+            echo "<h3>WOW! CONGRATS!!</h3>";
+            echo "</table>";
         } 
     }
     
@@ -61,8 +64,20 @@
         
         hr {
             width: 50%;
+            padding: 10px;
         }
         
+        body {
+            /*background: url(img/hw3Back.jpg);*/
+        }
+        
+        h2 {
+            color: red;
+            border-radius: 50px;
+            width:25%;
+            opacity: 0.8;
+            
+        }
     </style>
     <link rel='stylesheet' href='css/styles.css' type='text/css' />
     
@@ -103,9 +118,9 @@
                 <td><Strong>#2: What is the integer value between 3 & 5? </Strong></td>
                 <td>
                 <!---->
-                    <input type="radio" name="two" value="three"> Three
-                    <input type="radio" name="two" value="four"> Four
-                    <input type="radio" name="two" value="five"> Five 
+                    <input type="radio" name="two" value="three"> 3
+                    <input type="radio" name="two" value="four"> 4
+                    <input type="radio" name="two" value="five"> 5 
                       
                 </td>
                 </tr>
@@ -145,12 +160,13 @@
             
             if (formIsValid()) {
                 echo "<h3>".'Total Score: '.countScore().'/5'.congrats()."</h3>";
-                echo "<h2> Your Entered Answers </h2>";
-                echo "#1: ".$_GET['one']."  ";
-                echo "#2: ".$_GET['two']."  ";
-                echo "#3: ".$_GET['check']."  ";
-                echo "#4: ".$_GET['quantity']."  ";
-                echo "#5: ".$_GET['country']."  ";
+                
+                // echo "<h2> Your Entered Answers </h2>";
+                // echo "#1: ".$_GET['one']."  ";
+                // echo "#2: ".$_GET['two']."  ";
+                // echo "#3: ".$_GET['check']."  ";
+                // echo "#4: ".$_GET['quantity']."  ";
+                // echo "#5: ".$_GET['country']."  ";
                 require 'answers.php';
                 
             }

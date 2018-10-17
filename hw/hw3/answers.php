@@ -1,5 +1,44 @@
 <?php 
-
+    function checkingRadio() {
+        if($_GET['two'] == 'three') {
+            echo "<input type='radio' name='two' value='three' checked disabled> 3";
+            echo "<input type='radio' name='two' value='four'disabled> 4"; 
+            echo "<input type='radio' name='two' value='five'disabled> 5"; 
+        }
+        else if($_GET['two'] == 'four') {
+            echo "<input type='radio' name='two' value='three'disabled> 3";
+            echo "<input type='radio' name='two' value='four'checked disabled> 4"; 
+            echo "<input type='radio' name='two' value='five'disabled> 5"; 
+        }
+        else if($_GET['two'] == 'five') {
+            echo "<input type='radio' name='two' value='three'disabled> 3";
+            echo "<input type='radio' name='two' value='four'disabled> 4"; 
+            echo "<input type='radio' name='two' value='five' checked disabled> 5"; 
+        }
+    }
+    
+    function checkCountry() {
+        if($_GET['country'] == 'USA') {
+            echo "<select id='country' name='country' disabled selected>";
+                echo "<option value='USA'>USA</option>";
+            echo "</select>";
+        }
+        
+        else if($_GET['country'] == 'Your House') {
+            echo "<select id='country' name='country' disabled selected>";
+                echo "<option value='Your House'>Your House</option>";
+            echo "</select>";
+        }
+        
+        else if($_GET['country'] == 'Canada') {
+            echo "<select id='country' name='country' disabled selected>";
+                echo "<option value='Canada'>Canada</option>";
+            echo "</select>";
+        }
+        
+        
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +60,7 @@
     <link rel='stylesheet' href='css/styles.css' type='text/css' />
     
     <body>
-        <h1>Check Your Answers!</h1>
+        <h1>Your Entered Answers!</h1>
         <hr>
         <form method = 'GET' action="index.php">
             <div id ="div1">
@@ -31,7 +70,7 @@
                 <th>#1: Type the word "String".</th>
                 <th>
                 <!---->
-                    Enter <input type="text" id="fname" name="one" value="String" disabled>
+                    Enter <input type="text" id="fname" name="one" value= "<?=$_GET['one'] ?>" disabled>
                 </th>
                 </tr>
                 </thead>
@@ -42,12 +81,7 @@
                 <td>
                 <!---->
                     <label for="country">Country</label>
-                    <select id="country" name="five" disabled>
-                        <option value="usa">USA</option>
-                        <option value="myhouse">Your House</option>
-                        <option value="canada">Canada</option>
-                      
-                    </select>
+                    <?=checkCountry() ?>;
                       
                 </td>
                 </tr>
@@ -58,9 +92,7 @@
                 <td><Strong>#2: What is the integer value between 3 & 5? </Strong></td>
                 <td>
                 <!---->
-                    <input type="radio" name="two" value="3"> Three
-                    <input type="radio" name="two" value="4" checked disabled> Four 
-                    <input type="radio" name="two" value="5"> Five 
+                    <?=checkingRadio() ?>;
                       
                 </td>
                 </tr>
@@ -72,6 +104,7 @@
                 <td>
                 <!---->
                   <label>
+                      <!--call function here-->
                     <input type="checkbox" name="three" checked disabled> Check me! Just do it.
                   </label>
                 </td>
@@ -83,7 +116,7 @@
                 <td><Strong>#4: What is 3 + 3 = ? </Strong></td>
                 <td>
                 <!---->
-                    Select <input type="number" name="quantity" value="6" disabled>
+                    Select <input type="text" name="quantity" value="<?=$_GET['quantity'] ?>" disabled>
                       
                 </td>
                 </tr>
