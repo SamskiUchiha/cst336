@@ -1,0 +1,12 @@
+[23-Oct-2018 18:01:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'midterm'' in /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/MidtermPractice/midterm_practice2.php(4): startConnection('midterm')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php on line 10
+[23-Oct-2018 18:02:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'midterm_practice2'' in /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/MidtermPractice/midterm_practice2.php(4): startConnection('midterm_practic...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php on line 10

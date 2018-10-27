@@ -1,0 +1,82 @@
+    body {
+        background-color: lightgrey;
+        text-align: center;
+        
+    }
+    
+    input, select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input[type=submit] {
+        width: 10%;
+        background-color: aqua;
+        color: black;
+        padding: 10px 15px;
+        margin: 3px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: green;
+    }
+    table {
+        border: 2px solid black;
+        width: 50%;
+    }
+    
+    table,th {
+        
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgrey;
+        border-radius: 20px;
+    }
+    
+    table,td {
+        padding-left: 40px;
+    
+    }
+    
+    
+    img {
+        border-radius: 20px;
+        width: 40%;
+    }
+
+    
+    h1 {
+        font-size: 50px;
+        color: black;
+        text-align-last: center;
+    }
+    
+    
+    h3 {
+        color: green;
+        font-size: 25px;
+    }
+    #dv {
+        background-color: orange;
+        width: 50%;
+        border-radius: 50px
+        
+    }
+    
+    #tb {
+        
+        background-color: orange;
+        width: 40%;
+        border-radius: 5px
+    }
+    
+    hr {
+        height: 30px;
+        background-color: lightgrey;
+    }
