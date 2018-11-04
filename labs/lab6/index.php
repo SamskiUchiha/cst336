@@ -126,7 +126,9 @@ function filterProducts() {
             <?php
                 if($_GET['submit'] == "Search!") {
                     echo "<h2> Results: </h2>";
+                    // echo "<div id='dv2'";
                     filterProducts();
+                    // echo "</div";
                 }
             ?>
         </div></center>

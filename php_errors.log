@@ -10,3 +10,140 @@ Stack trace:
 #1 /home/ubuntu/workspace/cst336/MidtermPractice/midterm_practice2.php(4): startConnection('midterm_practic...')
 #2 {main}
   thrown in /home/ubuntu/workspace/cst336/MidtermPractice/dbConnection1.php on line 10
+[04-Nov-2018 19:40:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(134): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:40:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(134): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:43:26 UTC] PHP Fatal error:  Cannot redeclare getIncident() (previously declared in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:7) in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 7
+[04-Nov-2018 19:43:26 UTC] PHP Stack trace:
+[04-Nov-2018 19:43:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hackathonProject/elijah.php:0
+[04-Nov-2018 19:43:26 UTC] PHP   2. include() /home/ubuntu/workspace/cst336/hackathonProject/elijah.php:3
+[04-Nov-2018 19:43:26 UTC] PHP   3. include() /home/ubuntu/workspace/cst336/hackathonProject/functions.php:4
+[04-Nov-2018 19:44:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(134): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:44:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(134): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:45:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(128): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:45:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(128): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:45:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(128): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:47:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(133): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:48:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(133): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:48:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(133): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:53:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(130): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:53:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(130): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:57:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:57:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:58:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:58:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:59:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 19:59:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 20:58:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(131): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 21:02:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(127): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 21:02:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(127): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
+[04-Nov-2018 21:02:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '127' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hackathonProject/functions.php:104
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hackathonProject/functions.php(104): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/cst336/hackathonProject/elijah.php(127): summitForm()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hackathonProject/functions.php on line 104
