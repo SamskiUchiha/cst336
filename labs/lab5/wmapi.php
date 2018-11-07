@@ -1,4 +1,5 @@
 <?php
+//lab 5
     function getProducts($keywords) {
         // Replace whitespace so curl is happy
         $search = str_replace(' ', '%20', $keywords);

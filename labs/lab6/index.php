@@ -1,5 +1,5 @@
 <?php
-
+//lab 6
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 
