@@ -15,22 +15,24 @@ function displayAllProducts(){
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //we're expecting multiple records
-
+    echo "<table>";
     foreach ($records as $record) {
-        echo "<a class='btn btn-primary' role='button' href='updateProduct.php?productId=".$record['productId']."'>Update</a>";
-        //echo "[<a href='deleteProduct.php?productId=".$record['productId']."'>Delete</a>]";
-        echo "<form action='deleteProduct.php' onsubmit='return confirmDelete()'>";
-        echo "   <input type='hidden' name='productId' value='".$record['productId']."'>";
-        echo "   <button class='btn btn-outline-danger' type='submit'>Delete</button>";
-        echo "</form>";
         
-        echo "[<a 
+        echo "<tbody>";
+            echo "<tr>";
+                echo "<td><a class='btn btn-primary' role='button' href='updateProduct.php?productId=".$record['productId']."'>Update</a></td>";
+                echo "<td><form action='deleteProduct.php' onsubmit='return confirmDelete()'></td>";
+                echo "<td><input type='hidden' name='productId' value='".$record['productId']."'></td>";
+                echo "   <td><button class='btn btn-outline-danger' type='submit'>Delete</button></td>";
+                echo "</form>";
+                echo "<td>[<a onclick='openModal()' target='productModal' href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a>]  ";
+                echo " $" . $record[price]   . "<br><br></td>";
+            echo "</tr>";
+        echo "</tbody>";
         
-        onclick='openModal()' target='productModal'
-        href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a>]  ";
-        echo " $" . $record[price]   . "<br><br>";
         
     }
+    echo "<table>";
 }
 
 function getCategories() {

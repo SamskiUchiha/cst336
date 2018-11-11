@@ -36,6 +36,12 @@ include('functions.php');
           
         </td>
         
+        <td>
+          <form action="about.html">
+            <input type="submit" name="About" value="About"/> 
+          </form>
+          
+        </td>
         </tr>
         </tbody>
       </table>

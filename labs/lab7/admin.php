@@ -16,6 +16,14 @@ validateSession();
     <head>
         <title> Admin Main Page </title>
         <style>
+            table {
+                text-align:right;
+            }
+            body {
+                background: linear-gradient(to right, #ccff99 22%, #00ccff 86%);
+                text-align: center;
+                /*width: 100%;*/
+            }
             form {
                 display: inline-block;
             }
@@ -28,7 +36,7 @@ validateSession();
                 
                 //alert();
                 //prompt();
-                return confirm("Really??");
+                return confirm("Remove this item from Database?");
                 
             }
             
@@ -41,6 +49,58 @@ validateSession();
         </script>
     
     </head>
+    <style>
+    
+        button, select {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button[type=submit] {
+            width: 150px;
+            background: linear-gradient(to bottom, #003300 0%, #009933 100%);
+            color: black;
+            padding: 10px 15px;
+            margin: 3px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button[type=submit]:hover {
+            background: linear-gradient(to bottom, #cc3300 0%, #ff99cc 100%);
+        }
+        
+        
+        
+        input, select {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        
+        
+        input[type=submit] {
+            width: 150px;
+            background-color: #d69c2f;
+            color: black;
+            padding: 10px 15px;
+            margin: 3px 0;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+            background: linear-gradient(to bottom, #d69c2f 0%, #ff9966 100%);
+        }
+        
+    </style>
     <body>
         
         <h1> ADMIN SECTION - OTTERMART </h1>

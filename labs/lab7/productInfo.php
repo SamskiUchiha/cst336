@@ -21,11 +21,12 @@ if (isset($_GET['productId'])) {
     <head>
         <title> Product Info </title>
     </head>
+    <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <body>
     
     <h3><?=$productInfo['productName']?></h3>
      <?=$productInfo['productDescription']?><br>
-     <img src='<?=$productInfo['productImage']?>' height='75'/>
+     <img src='<?=$productInfo['productImage']?>' height='20%'/>
  
     </body>
 </html>
