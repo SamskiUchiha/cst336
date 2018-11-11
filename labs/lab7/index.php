@@ -48,7 +48,11 @@
     </head>
     <link rel='stylesheet' href='css/styles.css' type='text/css' />
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-    
+    <style>
+        img {
+            width: 50px;
+        }
+    </style>
     <script>
         function msg() {
             alert("Invalid password or username!");
@@ -81,4 +85,11 @@
         </div></center>
         
     </body>
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><img src = "images/verified.png" alt = "Buddy logo" title = "This is the Verified Buddy logo" width = "35px"/></center>
+    </footer>
 </html>

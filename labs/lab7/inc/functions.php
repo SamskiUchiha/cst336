@@ -1,13 +1,10 @@
 <?php
-
 function validateSession(){
     if (!isset($_SESSION['adminFullName'])) {
         header("Location: index.php");  //redirects users who haven't logged in 
         exit;
     }
 }
-
-
 function displayAllProducts(){
     global $dbConn;
     
@@ -34,7 +31,6 @@ function displayAllProducts(){
     }
     echo "<table>";
 }
-
 function getCategories() {
     global $dbConn;
     
@@ -48,7 +44,6 @@ function getCategories() {
     return $records;
     
 }
-
 function getProductInfo($productId) {
      global $dbConn;
     
@@ -61,5 +56,4 @@ function getProductInfo($productId) {
      
     
 }
-
 ?>

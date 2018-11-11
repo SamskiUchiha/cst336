@@ -1,11 +1,9 @@
 <?php
 session_start();
-
 include '../../inc/dbConnection.php';
 $dbConn = startConnection("ottermart");
 include 'inc/functions.php';
 validateSession();
-
 if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     
     $productName = $_GET['productName'];
@@ -29,7 +27,6 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     echo "New Product was added!";
     
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -70,14 +67,8 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
         input[type=submit]:hover {
             background-color: green;
         }
-
     </style>
     
-    <!--<script>-->
-    <!--    function msg() {-->
-    <!--        alert("New Product was added!");-->
-    <!--    }-->
-    <!--</script>-->
     
     <body>
         
