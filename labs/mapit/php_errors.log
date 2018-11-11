@@ -1,0 +1,45 @@
+[11-Nov-2018 10:53:57 UTC] PHP Warning:  include(html/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:53:57 UTC] PHP Stack trace:
+[11-Nov-2018 10:53:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:53:57 UTC] PHP Warning:  include(): Failed opening 'html/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:53:57 UTC] PHP Stack trace:
+[11-Nov-2018 10:53:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:53:57 UTC] PHP Fatal error:  Call to undefined function getIncident() in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 163
+[11-Nov-2018 10:53:57 UTC] PHP Stack trace:
+[11-Nov-2018 10:53:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:54:22 UTC] PHP Warning:  include(html/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/webdesign/cocoon/html/report.php on line 3
+[11-Nov-2018 10:54:22 UTC] PHP Stack trace:
+[11-Nov-2018 10:54:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/report.php:0
+[11-Nov-2018 10:54:22 UTC] PHP Warning:  include(): Failed opening 'html/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/webdesign/cocoon/html/report.php on line 3
+[11-Nov-2018 10:54:22 UTC] PHP Stack trace:
+[11-Nov-2018 10:54:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/report.php:0
+[11-Nov-2018 10:54:46 UTC] PHP Warning:  include(html/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:54:46 UTC] PHP Stack trace:
+[11-Nov-2018 10:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:54:46 UTC] PHP Warning:  include(): Failed opening 'html/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:54:46 UTC] PHP Stack trace:
+[11-Nov-2018 10:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:54:46 UTC] PHP Fatal error:  Call to undefined function getIncident() in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 163
+[11-Nov-2018 10:54:46 UTC] PHP Stack trace:
+[11-Nov-2018 10:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:03 UTC] PHP Warning:  include(html/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:55:03 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:03 UTC] PHP Warning:  include(): Failed opening 'html/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 2
+[11-Nov-2018 10:55:03 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:03 UTC] PHP Fatal error:  Call to undefined function getIncident() in /home/ubuntu/workspace/webdesign/cocoon/html/map.php on line 163
+[11-Nov-2018 10:55:03 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:42 UTC] PHP Warning:  include(html/dbConnectionMapIt.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/webdesign/cocoon/html/functions.php on line 3
+[11-Nov-2018 10:55:42 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:42 UTC] PHP   2. include() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:2
+[11-Nov-2018 10:55:42 UTC] PHP Warning:  include(): Failed opening 'html/dbConnectionMapIt.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/webdesign/cocoon/html/functions.php on line 3
+[11-Nov-2018 10:55:42 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:42 UTC] PHP   2. include() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:2
+[11-Nov-2018 10:55:42 UTC] PHP Fatal error:  Call to undefined function startConnection() in /home/ubuntu/workspace/webdesign/cocoon/html/functions.php on line 4
+[11-Nov-2018 10:55:42 UTC] PHP Stack trace:
+[11-Nov-2018 10:55:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:0
+[11-Nov-2018 10:55:42 UTC] PHP   2. include() /home/ubuntu/workspace/webdesign/cocoon/html/map.php:2
