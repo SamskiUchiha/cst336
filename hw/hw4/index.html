@@ -23,6 +23,9 @@
 			var leftArrowDown = false;
 			var rightArrowDown = false;
 			
+			var upArrowDown = false;
+			var downArrowDown = false;
+			
 			var bg1, bg2;
 			const BG_SPEED = 4;
 
@@ -167,6 +170,19 @@
 					else ship.style.left = maxX + 'px';
 				}
 				
+				if(upArrowDown){
+					var newY = parseInt(ship.style.top);
+					if(newY > 0) ship.style.top = newY - 14 + 'px';
+					else ship.style.top = '0px';
+				}
+
+				if(downArrowDown){
+					var newY = parseInt(ship.style.top);
+					var maxY= GS_WIDTH - parseInt(ship.style.width);
+					if(newY <  maxY) ship.style.top = newY + 14 + 'px';
+					else ship.style.top = maxY + 'px';
+				}
+				
 				var b = bullets.children;
 				for(var i = 0; i < b.length; i++) {
 					var newY = parseInt(b[i].style.top) - b[i].speed;
@@ -257,6 +273,28 @@
 				} 
 			});
 			
+			document.addEventListener('keydown', function(event){
+				if(event.keyCode==38) {
+					upArrowDown = true;
+					ship.src = 'redfighter_default.png';
+				}
+				if(event.keyCode==40) {
+					downArrowDown = true;
+					ship.src = 'redfighter_default.png';
+				}
+			});
+
+			document.addEventListener('keyup', function(event){
+				if(event.keyCode==38) {
+					upArrowDown = false;
+					ship.src = 'redfighter_default.png';
+				}
+				if(event.keyCode==40) {
+					downArrowDown = false;
+					ship.src = 'redfighter_default.png';
+				}
+			});
+			
 			$(document).ready(function(){
 			    $("#hide").click(function(){
 			    	$("#game").stop();
@@ -271,7 +309,7 @@
 			
 			$(document).ready(function(){
 			    $("#move").click(function(){
-			        $("div").animate({top: '40px'});
+			        $("div").animate({top: '45px'});
 			    });
 			});
 			$(document).ready(function(){
