@@ -324,7 +324,14 @@
 		
 		<style>
 			body {
-				background-image: radial-gradient(circle, #000001 52%, aqua 70%, #000011 70%);
+				background: url('back3.jpg');
+				background-repeat: no-repeat;
+				width:100%;
+			}
+			#layer {
+				width:50%;
+				border-radius: 10000px;
+				background-image: radial-gradient(circle, #000001 52%, gold 70%, #000011 70%);
 				/*background: linear-gradient(to bottom, #000000 52%, );*/
 			}
 			#gameScreen{
@@ -353,8 +360,8 @@
 			    font-size:10px;
 			    height:40px;
 			    width:75px;
-			    background-color: gray;
-			    color: white;
+			    background-color: yellow;
+			    color: black;
 			    padding: 10px 15px;
 			    margin: 3px 0;
 			    border: none;
@@ -389,27 +396,29 @@
 			    left: 0;
 			    z-index: 100;
 			}
-
 			
 
 		</style>
 	</head>
+	<center><a href="https://fontmeme.com/clawface-video-game-font/"><img src="https://fontmeme.com/permalink/181114/6a494ab51826085de412e71ba158d2de.png" alt="clawface-video-game-font" border="0"></a></center>
 	<center><body onload="init()">
-		<div id= "score"></div> 
 		<br>
 		<br>
-		<div id="game">
-			<div id="gameScreen"></div>
-			<div id="output"></div>
+		<div id="layer">
+			<div id="game">
+				<div id="gameScreen"></div>
+				<div id="output"></div>
+			</div>
+			
+			<button id="hide">Hide Game</button>
+			<button id="move">Hide Buttons</button>
+			<button id="show">Show Game</button>
+			<button id="reload" type="button">Reload page</button>  
 		</div>
 		
-		<button id="hide">Hide Game</button>
-		<button id="move">Hide Buttons</button>
-		<button id="show">Show Game</button>
-		<button id="reload" type="button">Reload page</button>  
 		
-		<script>
-			
-		</script>
 	</body></center>
+	<br>
+	<br>
+	<center><img src = "verified.png" alt = "Buddy logo" title = "This is the Verified Buddy logo" width = "35px"/></center>
 </html>
