@@ -1,4 +1,4 @@
-$('head').append('<link rel="stylesheet" type="text/css" href="style.css">');
+//$('head').append('<link rel="stylesheet" type="text/css" href="style.css">');
 
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
                 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 

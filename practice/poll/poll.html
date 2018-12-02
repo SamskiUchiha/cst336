@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+        <script>
+        
+        function validateForm() {
+                
+            var poll = document.getElementById("poll").checked;
+            if(poll) {
+                return true;
+            }
+             
+            return false;
+           
+            }
+        
+        function updatePoll() {
+            $("#container").html("<img src='img/loading.gif' />");
+            // var poll_yes = 0;
+            // var poll_no = 0;
+            // var poll_maybe = 0;
+            
+            // var yes = document.getElementById("yes").checked;
+            // var no = document.getElementById("no").checked;
+            // var maybe = document.getElementById("maybe").checked;
+            // //Include here the AJAX call 
+            
+            // if(yes) {
+            //     poll_yes++;
+            // }
+            // else if(no) {
+            //     poll_no++;
+            // }
+            // else if(maybe) {
+            //     poll_maybe++;
+            // }
+        
+            
+            var poll = $("#poll").val();
+            
+            // //alert(username);
+            $.ajax({
+
+                type: "GET",
+                url: "pollAPI.php",
+                dataType: "json",
+                data: { "poll": poll},
+                success: function(data, status) {
+                    // if() {
+                        
+                    // }
+                 
+                    //on Success, call the 'updatePollChart' function passing the percentages of the three choices, for example:
+                   
+                
+                },
+                complete: function(data, status) { //optional, used for debugging purposes
+                    //alert(status);
+                }
+    
+            }); //ajax
+            
+            if(poll == "yes"){
+                updatePollChart(45,25,30)
+            } else{
+                updatePollChart(20,35,25);
+            }
+             //updatePollChart(20,35,25);
+        
+        }
+        
+        //You can change the choice names if different from "yes", "maybe", and "no"
+        function updatePollChart(yes, maybe, no) {
+            Highcharts.chart('container', {
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: ''
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Choices',
+                        colorByPoint: true,
+                        data: [{
+                            name: 'Yes',
+                            y: yes
+                        }, {
+                            name: 'Maybe',
+                            y: maybe,
+                            sliced: true,
+                            selected: true
+                        }, {
+                            name: 'No',
+                            y: no
+                        }]
+                    }]
+                });
+        }//endFunction
+        
+        </script>
+        
+    </head>
+    <body>
+
+      <h1> Question Here </h1>
+      <div> Is Global Warming real?</div>
+      <form onsubmit="return validateForm()">
+            <input type="radio" name="poll_" value="yes" id="poll"> Yes
+            <input type="radio" name="poll_" value="maybe" id="poll"> Maybe
+            <input type="radio" name="poll_" value="no" id="poll"> No <br>
+            
+      </form>
+        <button onclick="updatePoll()">Submit</button>
+        
+      
+      <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+    </body>
+</html>

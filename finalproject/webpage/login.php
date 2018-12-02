@@ -51,6 +51,13 @@
         alert("Invalid password or username!");
     }
     </script>
+    <style>
+        body {
+            background: linear-gradient(to right, #ccff99 22%, #00ccff 86%);
+            text-align: center;
+            /*width: 100%;*/
+        }
+    </style>
 	</head>
 	<body>
 	<div id="colorlib-page">
