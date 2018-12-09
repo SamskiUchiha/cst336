@@ -1,19 +1,14 @@
 <?php
     session_start();
     
-    include '../../inc/dbConnection.php';
-    $dbConn = startConnection("ottermart");
+    include 'inc/dbConnection.php';
+    $dbConn = startConnection("fortnite");
     
     function valid() {
         global $dbConn;
         
         $username = $_POST['username'];
         $password = sha1($_POST['password']);
-        
-        //This SQL does NOT prevent SQL Injection (because of the single quotes)
-        // $sql = "SELECT * FROM om_admin
-        //                  WHERE username = '$username' 
-        //                  AND  password = '$password'";
                          
         $sql = "SELECT * FROM om_admin
                          WHERE username = :username 
@@ -31,11 +26,10 @@
             
         } else {
            $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
-           header('Location: admin.php'); //redirects to another program
+           header('Location: displayadminmenu.php'); //redirects to another program
             
         }
     }
-
 
 ?>
 
@@ -47,9 +41,40 @@
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
     <script>
-    function msg() {
-        alert("Invalid password or username!");
-    }
+        function msg() {
+            alert("Invalid password or username!");
+        }
+        
+        $("document").ready(function(){  
+            $("#username").change(function() {
+                    var username = $("#username").val();
+                    //alert(username);
+                    $.ajax({
+    
+                        type: "GET",
+                        url: "usernameAPI.php",
+                        dataType: "json",
+                        data: { "username": username },
+                        success: function(data, status) {
+                         
+                            if(data == username) {
+                              
+                            } else {
+                                 
+                                 
+                            }
+                        
+                        },
+                        complete: function(data, status) { //optional, used for debugging purposes
+                            //alert(status);
+                        }
+    
+                    }); //ajax
+
+    
+                });
+        });
+
     </script>
     <style>
         body {
@@ -76,9 +101,9 @@
             <h2> Welcome Admin </h2>
             <!--<a href="https://fontmeme.com/small-caps-fonts/"><img src="https://fontmeme.com/permalink/181111/402540f673630abdb7e0d7fd0c1ffc05.png" alt="small-caps-fonts" border="0"></a>-->
             <form method="post">
-              <input type="text" name="username" placeholder="username"/> <br>
+              <input type="text" id="username" name="username" placeholder="username"/> <br>
               <br>
-              <input type="password" name="password" placeholder="password"/> <br>
+              <input type="password" id="password" name="password" placeholder="password"/> <br>
               <br>
               <input type="submit" value="Login">
               <br>

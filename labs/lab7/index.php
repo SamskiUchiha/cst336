@@ -43,7 +43,7 @@
 <html>
 	<head>
 	<title>login</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
     <script>
@@ -53,17 +53,6 @@
     </script>
 	</head>
 	<body>
-	<div id="colorlib-page">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<h1 id="colorlib-logo"><a href="index.html">Items Shop</a></h1>
-			<nav id="colorlib-main-menu" role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li class="colorlib-active"><a href="login.php">Admin Sign in</a></li>
-				</ul>
-			</nav>
-		</aside>
 		  <center><div id="login">
             <br>
             <h2> Welcome Admin </h2>
@@ -86,6 +75,6 @@
               ?>
             </form>
         </div></center>
-	</div>
+	
 	</body>
 </html>

@@ -2,7 +2,10 @@
 <html>
     <head>
         <title> CSUMB: Pet Shelter </title>
-        
+         <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -11,51 +14,86 @@
             body {
                 text-align: center;
             }
+            
+             .carousel-inner img{
+                border-radius: 50px;
+                width: 600px;
+                height: 400px;
+              }
+            
         </style>
    
     </head>
     <body>
         
-	<!--Add main menu here -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">CSUMB</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="adoptions.php">Adoptions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.php">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-        
-        
-        <div class="jumbotron">
-          <h1> CSUMB Animal Shelter</h1>
-          <h2> The "official" animal adoption website of CSUMB </h2>
-        </div>
-        
+	  <?php 
+	    include 'inc/header.php';
+	    
+	  ?>
         <!-- Display Carousel here  -->
+
+        <!-- Indicators -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <?php
+                    for ($i=1; $i < 9; $i++) { 
+                        echo "<li data-target='#demo' data-slide-to='$i'></li>";
+                    }
+                ?>
+            </ol>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/alex.jpg" alt="alex">
+            </div>
+            <div class="carousel-item">
+              <img src="img/bear.jpg" alt="bear">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carl.jpg" alt="bear">
+            </div>
+             <div class="carousel-item">
+              <img src="img/charlie.jpg" alt="charlie">
+            </div>
+             <div class="carousel-item">
+              <img src="img/lion.jpg" alt="lion">
+            </div>
+             <div class="carousel-item">
+              <img src="img/otter.jpg" alt="otter">
+            </div>
+             <div class="carousel-item">
+              <img src="img/sally.jpg" alt="sally">
+            </div>
+             <div class="carousel-item">
+              <img src="img/samantha.jpg" alt="samantha">
+            </div>
+             <div class="carousel-item">
+              <img src="img/ted.jpg" alt="ted">
+            </div>
+             <div class="carousel-item">
+              <img src="img/tiger.jpg" alt="tiger">
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+       
+       <br><br>
+       
         
-        
-        <a class="btn btn-outline-success" href="adoptions.php" role="button">Adopt Now</a>
+        <a class="btn btn-outline-success" href="pets.php" role="button">Adopt Now</a>
         <br><br><br>
-        <hr>
-        <footer>
-            
-            Disclaimer: The information on this site is fake.<br>
-            &copy; Lara 2018
-            
-        </footer>
+        <?php
+        include 'inc/footer.php';
         
+        ?>
         </body>
 
 </html>

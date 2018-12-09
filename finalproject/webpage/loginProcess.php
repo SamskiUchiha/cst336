@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include '../../inc/dbConnection.php';
-$dbConn = startConnection("ottermart");
+include 'inc/dbConnection.php';
+$dbConn = startConnection("fortnite");
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
@@ -21,7 +21,7 @@ $np[':password'] = $password;
 
 $stmt = $dbConn->prepare($sql);
 $stmt->execute($np);
-$record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting just one record
+$record = $stmt->fetch(PDO::FETCH_ASSOC); //we're expecting *just one record
 
 //print_r($record);
 

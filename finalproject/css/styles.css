@@ -65,3 +65,11 @@ body{
 	position:relative;
 	top:1px;
 }
+
+#login {
+    width: 15%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(2px,15%);
+}
