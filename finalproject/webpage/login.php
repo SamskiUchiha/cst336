@@ -26,7 +26,7 @@
             
         } else {
            $_SESSION['adminFullName'] = $record['firstName'] .  "   "  . $record['lastName'];
-           header('Location: displayadminmenu.php'); //redirects to another program
+           header('Location: admin.php'); //redirects to another program
             
         }
     }
@@ -37,6 +37,11 @@
 <html>
 	<head>
 	<title>login</title>
+	
+	<link rel="stylesheet" href="css/img.css">
+	<link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+	<link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+	
 	<link rel="stylesheet" href="css/style.css">
 	
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -44,43 +49,18 @@
         function msg() {
             alert("Invalid password or username!");
         }
-        
-        $("document").ready(function(){  
-            $("#username").change(function() {
-                    var username = $("#username").val();
-                    //alert(username);
-                    $.ajax({
-    
-                        type: "GET",
-                        url: "usernameAPI.php",
-                        dataType: "json",
-                        data: { "username": username },
-                        success: function(data, status) {
-                         
-                            if(data == username) {
-                              
-                            } else {
-                                 
-                                 
-                            }
-                        
-                        },
-                        complete: function(data, status) { //optional, used for debugging purposes
-                            //alert(status);
-                        }
-    
-                    }); //ajax
-
-    
-                });
-        });
-
     </script>
     <style>
         body {
-            background: linear-gradient(to right, #ccff99 22%, #00ccff 86%);
+            /*background: linear-gradient(to right, #ccff99 22%, #00ccff 86%);*/
+            background-color: lightgray;
             text-align: center;
             /*width: 100%;*/
+        }
+        
+        p{
+            color: #F3BA03;
+            font-size: 0.67em;
         }
     </style>
 	</head>
@@ -88,13 +68,17 @@
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<h1 id="colorlib-logo"><a href="index.html">Items Shop</a></h1>
+			<h1 id="colorlib-logo"><a href="index.php">Fortnite Items</a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li class="colorlib-active"><a href="login.php">Admin Sign in</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li class="colorlib-active"><a href="login.php">Sign in</a></li>
 				</ul>
 			</nav>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div>
+				<p><small>&copy;<script>document.write(new Date().getFullYear());</script> sLaitha CST336 Final Project | Academic purposes.
+			</div>
 		</aside>
 		  <center><div id="login">
             <br>

@@ -51,7 +51,7 @@
               <img src="img/bear.jpg" alt="bear">
             </div>
             <div class="carousel-item">
-              <img src="img/carl.jpg" alt="bear">
+              <img src="img/carl.jpg" alt="carl">
             </div>
              <div class="carousel-item">
               <img src="img/charlie.jpg" alt="charlie">

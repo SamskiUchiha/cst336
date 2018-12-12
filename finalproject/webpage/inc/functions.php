@@ -1,7 +1,7 @@
 <?php
 function validateSession(){
     if (!isset($_SESSION['adminFullName'])) {
-        header("Location: index.html");  //redirects users who haven't logged in 
+        header("Location: index.php");  //redirects users who haven't logged in 
         exit;
     }
 }
@@ -18,10 +18,12 @@ function displayAllProducts(){
         echo "<tbody>";
             echo "<tr>";
                
-                echo " <td><img src=".$record['productImage']." title=".$record['productName']." width='150' height='150' /><td>";
+                echo " <td><img src=".$record['productImage']." title=".$record['productName']." width='200' height='200' /><td>";
                 
-                echo "<td>[<a onclick='openModal()' target='productModal' href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a>]  ";
-                echo " $" . $record[price]   . "<br><br></td>";
+                echo "<center><h4><a onclick='openModal()' target='productModal' href='productInfo.php?productId=".$record['productId']."'>".$record['productName']."</a></h4><br></center>";
+                echo "<center>" . $record[price]. " V-Bucks </center>";
+                echo "<center>" . $record[productDescription]. " </center>";
+                echo "<center> Product ID: " . $record[productId]. " </center>";
                 
                 echo "<td><input type='hidden' name='productId' value='".$record['productId']."'></td>";
                 echo "   <td><button class='btn btn-outline-danger' type='submit'>Delete</button></td>";
